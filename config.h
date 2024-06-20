@@ -18,14 +18,14 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono NF:size=10" };
 static const char dmenufont[]       = "JetBrainsMono NF:size=10";
 static const char col_bg1[]       = "#1d2021";
-static const char col_bg2[]       = "#282828";
-static const char col_bg3[]       = "#32302f";
+static const char col_bg2[]       = "#282828";/* "282828"; */
+static const char col_bg3[]       = "#32302f";/* "32302f"; */
 static const char col_fg1[]       = "#fbf1c7";
 static const char col_acc[]        = "#d65d0e";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_bg3, col_bg1, col_bg2 },
-	[SchemeSel]  = { col_fg1, col_fg1,  col_acc  },
+	[SchemeNorm] = { col_fg1, col_bg1, col_bg2 },
+	[SchemeSel]  = { col_bg3, col_fg1,  col_acc  },
 };
 
 /* tagging */
