@@ -87,7 +87,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_bg1, "-nf", col_bg3, "-sb", col_acc, "-sf", col_fg1, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *lockcmd[] = { "slock", NULL };
+static const char *lockcmd[]  = { "slock", NULL };
+static const char *flamecmd[] = { "flameshot", "gui", NULL};
 
 #include "exitdwm.c"
 static const Key keys[] = {
@@ -132,6 +133,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lockcmd } },
+	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = flamecmd} },
 	{ MODKEY,                       XK_n,      togglealttag,   {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
