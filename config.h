@@ -29,8 +29,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "󰈹", "", "", "", "󰌋", "󰒓" };
-static const char *tagsalt[] = { "󰈹", "", "", "", "󰌋", "󰒓" };
+static const char *tags[] = { "󰈹", "", "󰎚", "󰭹", "", "", "󰌋", "󰒓" };
+static const char *tagsalt[] = { "󰈹", "", "󰎚", "󰭹", "", "", "󰌋", "󰒓" };
 
 static const int momentaryalttags = 0; /* 1 means alttags will show only when key is held down*/
 
