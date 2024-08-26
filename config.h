@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappih    = 4;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 4;       /* vert inner gap between windows */
@@ -20,7 +20,7 @@ static const char dmenufont[]       = "JetBrainsMono Nerd Font Mono:size=11";
 static const char col_bg1[]       = "#1d2021";
 static const char col_bg2[]       = "#282828";/* "282828"; */
 static const char col_bg3[]       = "#32302f";/* "32302f"; */
-static const char col_fg1[]       = "#fbf1c7";
+static const char col_fg1[]       = "#d5c4a1";/* "#fbf1c7" */
 static const char col_acc[]        = "#d65d0e";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -47,7 +47,7 @@ static const Rule rules[] = {
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 #define FORCE_VSPLIT 1  /* nrowgrid layout: force two clients to always split vertically */
